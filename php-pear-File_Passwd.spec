@@ -3,13 +3,15 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
+%define		_requires_exceptions pear(PHPUnit.php)
+
 Summary:	%{_pearname} - manipulate password files
 Name:		php-pear-%{_pearname}
-Version:	1.1.5
-Release:	%mkrel 5
+Version:	1.1.6
+Release:	%mkrel 1
 License:	PHP License
 Group:		Development/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tar.bz2
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/File_Passwd/
 Requires(post): php-pear
 Requires(preun): php-pear
@@ -79,7 +81,4 @@ rm -rf %{buildroot}
 %dir %{_datadir}/pear/%{_class}/%{_subclass}
 %{_datadir}/pear/%{_class}/*.php
 %{_datadir}/pear/%{_class}/%{_subclass}/*.php
-
 %{_datadir}/pear/packages/%{_pearname}.xml
-
-
