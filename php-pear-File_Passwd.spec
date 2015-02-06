@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.1.7
-Release:	8
+Release:	9
 Summary:	Manipulate password files
 License:	PHP License
 Group:		Development/PHP
