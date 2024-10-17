@@ -8,7 +8,7 @@ Release:	9
 Summary:	Manipulate password files
 License:	PHP License
 Group:		Development/PHP
-URL:		http://pear.php.net/package/File_Passwd/
+URL:		https://pear.php.net/package/File_Passwd/
 Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
